@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap");
+
+:root {
+  --base-color: #272a31;
+  --second-color: #ec5242;
+  --third-color: #d3d3d3;
+
+  --font: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #d3d3d3;
+  font-size: 100%;
+  padding: 0 10px;
+  font-family: var(--font);
+  font-weight: normal;
+}
+
+.navbar {
+  display: flex;
+}
+
+.evt-title-f {
+  margin-bottom: 0px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.evt-title-s {
+  margin-top: 0px;
+}
+
+.evt-desc {
+  border: solid white;
+  padding: 10px;
+  align-content: center;
+}
+
+.evt-desc > p {
+  font-size: 0.8rem;
+  margin: 0px;
+}
+
+.evt-d-p > h2 {
+  margin-bottom: 0px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.evt-d-p > h5 {
+  margin-top: 0px;
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+
+.main-title-container {
+  align-content: center;
+}
+
+.main-title-container > h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.ctn-program {
+  list-style: none;
+  padding: 0px;
+}
+
+.program-ctn {
+  display: grid;
+  grid-template-columns: 20% 30% auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.program-ctn > p,
+.program-ctn > h3,
+.program-ctn > img {
+  font-size: 0.8rem;
+  align-self: center;
+  padding: 5px;
+}
+
+.program-ctn > h3{
+  color: var(--second-color);
+}
+
+.program-ctn > img {
+  width: 50px;
+  height: 50px;
+}
+
+.program-ctn {
+  background-color: wheat;
+}
+
+.item-program {
+  margin-bottom: 0.5em;
+}
+
+.ctn-btn {
+  text-align: center;
+}
+
+.btn {
+  border: 2px solid var(--second-color);
+  background-color: var(--second-color);
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ctn-speakers {
+  text-align: center;
+}
+
+.spk-title {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+.ctn-spk {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  column-gap: 5px;
+}
+
+.spk-img-ctn {
+  height: 75%;
+  text-align: center;
+  align-self: center;
+}
+
+.spk-img-ctn > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spk-name,
+.spk-role,
+.spk-desc {
+  text-align: start;
+  margin-top: 0px;
+  font-weight: lighter;
+  font-size: 0.6rem;
+  margin-left: 5px;
+}
+
+.spk-role {
+  color: var(--second-color);
+}
+
+.spk-name {
+  font-weight: bolder;
+}
