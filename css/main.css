@@ -9,15 +9,24 @@
 }
 
 body {
-  background-color: #d3d3d3;
+  background-color: rgba(243, 243, 243, 0.575);
   font-size: 100%;
-  padding: 0 10px;
   font-family: var(--font);
   font-weight: normal;
+  margin: 0px;
+}
+
+.hero{
+  padding: 0 10px;
 }
 
 .navbar {
   display: flex;
+  padding: 0 10px;
+}
+
+.evt-title{
+  color: var(--second-color);
 }
 
 .evt-title-f {
@@ -42,6 +51,7 @@ body {
 }
 
 .evt-d-p > h2 {
+  color: #272a31;
   margin-bottom: 0px;
   font-size: 1rem;
   font-weight: normal;
@@ -53,8 +63,14 @@ body {
   font-weight: normal;
 }
 
+main{
+  background-color: var(--base-color);
+  padding: 20px 10px;
+}
+
 .main-title-container {
   align-content: center;
+  color: white;
 }
 
 .main-title-container > h3 {
@@ -70,7 +86,7 @@ body {
 
 .program-ctn {
   display: grid;
-  grid-template-columns: 20% 30% auto;
+  grid-template-columns: 20% 30% 50%;
   justify-content: center;
   align-content: center;
 }
@@ -83,6 +99,10 @@ body {
   padding: 5px;
 }
 
+.program-ctn > p{
+  color: rgb(228, 228, 228);
+}
+
 .program-ctn > h3{
   color: var(--second-color);
 }
@@ -93,7 +113,7 @@ body {
 }
 
 .program-ctn {
-  background-color: wheat;
+  background-color: #6a6b6e80;
 }
 
 .item-program {
@@ -102,6 +122,8 @@ body {
 
 .ctn-btn {
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .btn {
