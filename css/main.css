@@ -287,7 +287,7 @@ footer {
   align-self: center;
 }
 
-.ctn-container > h4{
+.ctn-container > h4 {
   color: #353535;
 }
 
@@ -301,9 +301,9 @@ footer {
   margin-bottom: 3px;
   color: #a2a2a2;
 }
+
 .ctp-cpr .cpr-bottom {
   font-size: 10px;
-  margin-top: 10.7;
   margin-top: 3px;
   color: #a2a2a2;
 }
