@@ -274,6 +274,38 @@ main {
   margin-top: 20px;
 }
 
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.ctn-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.ctn-container > h4{
+  color: #353535;
+}
+
+.ctp-cpr {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.ctp-cpr .cpr-top {
+  font-size: 10px;
+  margin-bottom: 3px;
+  color: #a2a2a2;
+}
+.ctp-cpr .cpr-bottom {
+  font-size: 10px;
+  margin-top: 10.7;
+  margin-top: 3px;
+  color: #a2a2a2;
+}
+
 @media screen and (min-width: 768px) {
   .top-header > ul > li > a > img {
     width: 15px;
@@ -377,5 +409,9 @@ main {
 
   footer > h5 {
     margin-bottom: 0;
+  }
+
+  .ctn-container > h4{
+    color: rgb(180, 180, 180);
   }
 }
