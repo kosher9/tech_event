@@ -249,7 +249,22 @@ main {
   gap: 32px;
 }
 
+.img-spk::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 20em;
+  background: url(../images/dots.svg) no-repeat;
+  left: 0;
+  top: -4em;
+}
+
 @media screen and (min-width: 768px) {
+  .top-header > ul > li > a > img{
+    width: 15px;
+    height: 15px;
+  }
+
   .right-ctn > a {
     align-self: center;
     text-decoration: none;
@@ -271,6 +286,7 @@ main {
     list-style: none;
     padding-left: 15%;
     padding-right: 15%;
+    margin-top: 0px;
   }
 
   .top-header > ul > li > a {

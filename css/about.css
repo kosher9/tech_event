@@ -255,6 +255,12 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+
+  .top-header > ul > li > a > img{
+    width: 15px;
+    height: 15px;
+  }
+
   .frame-ctn {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -281,6 +287,7 @@ main {
     justify-content: flex-end;
     gap: 15px;
     list-style: none;
+    margin-top: 0px;
     padding-left: 15%;
     padding-right: 15%;
   }
