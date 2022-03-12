@@ -1,10 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/Cocogoose.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --base-color: #272a31;
   --second-color: #ec5242;
   --third-color: #d3d3d3;
-  --font: "Poppins", sans-serif;
+  --font: "Lato", sans-serif;
+  --title-font: "Cocogoose", sans-serif;
 }
 
 span {
@@ -67,6 +75,7 @@ footer > h5 {
 
 .evt-title {
   color: var(--second-color);
+  font-family: var(--title-font);
 }
 
 .evt-title > h3,
@@ -82,6 +91,7 @@ footer > h5 {
 
 .evt-title-s {
   margin-top: 0;
+  font-family: var(--title-font);
 }
 
 .evt-desc {
@@ -254,6 +264,16 @@ main {
   line-height: 44px;
 }
 
+.ctn-logo {
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  padding: 50px 0;
+  border: 2px solid rgb(219, 219, 219);
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .top-header > ul > li > a > img {
     width: 15px;
@@ -348,5 +368,14 @@ main {
   .right-ctn > ul > li > .about {
     font-weight: 700;
     color: var(--second-color);
+  }
+
+  footer {
+    background-color: var(--base-color);
+    color: white;
+  }
+
+  footer > h5 {
+    margin-bottom: 0px;
   }
 }

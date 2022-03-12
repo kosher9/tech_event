@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap");
 
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../fonts/Cocogoose.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --base-color: #272a31;
   --second-color: #ec5242;
   --third-color: #d3d3d3;
-  --font: "Poppins", sans-serif;
+  --font: "Lato", sans-serif;
+  --title-font: 'Cocogoose', sans-serif;
 }
 
 span {
@@ -63,6 +71,7 @@ body {
 
 .evt-title-s {
   margin-top: 0;
+  font-family: var(--title-font);
 }
 
 .evt-desc {
@@ -194,7 +203,6 @@ main {
 .spk-desc {
   text-align: start;
   margin-top: 0;
-  font-weight: lighter;
   font-size: 0.6rem;
   margin-left: 5px;
 }
@@ -257,6 +265,20 @@ main {
   background: url(../images/dots.svg) no-repeat;
   left: 0;
   top: -4em;
+}
+
+footer{
+  align-content: center;
+  margin-top: 50px;
+}
+
+footer > h5 {
+  color: white;
+  background-color: var(--base-color);
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: normal;
+  margin-bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {
