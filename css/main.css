@@ -85,6 +85,15 @@ body {
   margin: 0;
 }
 
+footer > h5 {
+  color: white;
+  background-color: var(--base-color);
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
 .evt-d-p > h2 {
   color: #272a31;
   margin-bottom: 0;
@@ -267,18 +276,9 @@ main {
   top: -4em;
 }
 
-footer{
+footer {
   align-content: center;
   margin-top: 50px;
-}
-
-footer > h5 {
-  color: white;
-  background-color: var(--base-color);
-  text-align: center;
-  font-size: 0.6rem;
-  font-weight: normal;
-  margin-bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {

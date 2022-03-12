@@ -376,6 +376,6 @@ main {
   }
 
   footer > h5 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }

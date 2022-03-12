@@ -56,7 +56,7 @@ function createDom() {
 
     const img = document.createElement('img');
     img.className = 'img-spk';
-    img.alt = 'speaker image'
+    img.alt = 'speaker image';
 
     const spkInfo = document.createElement('div');
     spkInfo.className = 'ctn-spk-info';
