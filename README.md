@@ -2,12 +2,18 @@
 
 # Tech_Event
 
-> A website t see upcomming tech related event
+> A website to see upcomming tech related events
 
 
 ## Built With
 
 - HTML, CSS & JavaScript
+
+## Design
+
+- Inspired by [Cindy Shin in Behance](https://www.behance.net/adagio07)
+
+- Icones by Pixel perfect
 
 ## Authors
 
