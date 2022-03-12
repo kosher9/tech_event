@@ -4,6 +4,8 @@
 
 > A website to see upcomming tech related events
 
+## live demo
+[live demo](https://kosher9.github.io/tech_event/)
 
 ## Built With
 
