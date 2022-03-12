@@ -4,7 +4,6 @@
   --base-color: #272a31;
   --second-color: #ec5242;
   --third-color: #d3d3d3;
-
   --font: "Poppins", sans-serif;
 }
 
@@ -21,6 +20,7 @@ span {
 }
 
 .logo {
+  display: none;
   font-size: 1.5rem;
   font-weight: 600;
   align-self: center;
@@ -32,11 +32,7 @@ body {
   font-size: 100%;
   font-family: var(--font);
   font-weight: normal;
-  margin: 0px;
-}
-
-.logo {
-  display: none;
+  margin: 0;
 }
 
 .campagn {
@@ -60,13 +56,13 @@ body {
 }
 
 .evt-title-f {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-size: 1rem;
   font-weight: normal;
 }
 
 .evt-title-s {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .evt-desc {
@@ -77,18 +73,18 @@ body {
 
 .evt-desc > p {
   font-size: 0.8rem;
-  margin: 0px;
+  margin: 0;
 }
 
 .evt-d-p > h2 {
   color: #272a31;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-size: 1rem;
   font-weight: normal;
 }
 
 .evt-d-p > h5 {
-  margin-top: 0px;
+  margin-top: 0;
   font-size: 0.6rem;
   font-weight: normal;
 }
@@ -111,7 +107,7 @@ main {
 
 .ctn-program {
   list-style: none;
-  padding: 0px;
+  padding: 0;
 }
 
 .program-ctn {
@@ -119,6 +115,7 @@ main {
   grid-template-columns: 20% 30% 50%;
   justify-content: center;
   align-content: center;
+  background-color: #6a6b6e80;
 }
 
 .program-ctn > p,
@@ -140,10 +137,6 @@ main {
 .program-ctn > img {
   width: 50px;
   height: 50px;
-}
-
-.program-ctn {
-  background-color: #6a6b6e80;
 }
 
 .item-program {
@@ -200,7 +193,7 @@ main {
 .spk-role,
 .spk-desc {
   text-align: start;
-  margin-top: 0px;
+  margin-top: 0;
   font-weight: lighter;
   font-size: 0.6rem;
   margin-left: 5px;
@@ -250,13 +243,21 @@ main {
   margin-bottom: 15px;
 }
 
-.ctn-speakers-div{
+.ctn-speakers-div {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
 @media screen and (min-width: 720px) {
+  .right-ctn > a {
+    align-self: center;
+    text-decoration: none;
+    border: 5px solid var(--second-color);
+    padding: 5px 5px;
+    color: var(--second-color);
+  }
+
   .top-header {
     display: block;
   }
@@ -290,14 +291,16 @@ main {
   }
 
   .navbar {
-    padding: 0px;
+    padding: 0;
     background-color: white;
-    box-shadow: 0px 0px 8px rgb(0 0 0 / 60%);
+    box-shadow: 0 0 8px rgb(0 0 0 / 60%);
   }
 
   .nav-container {
     padding-left: 15%;
     padding-right: 15%;
+    display: flex;
+    place-content: space-between;
   }
 
   .campagn {
@@ -340,11 +343,6 @@ main {
     gap: 32px;
   }
 
-  .nav-container {
-    display: flex;
-    place-content: space-between;
-  }
-
   .right-ctn {
     display: flex;
     justify-content: space-between;
@@ -360,14 +358,6 @@ main {
     color: var(--base-color);
   }
 
-  .right-ctn > a {
-    align-self: center;
-    text-decoration: none;
-    border: 5px solid var(--second-color);
-    padding: 5px 5px;
-    color: var(--second-color);
-  }
-
   .item-program {
     border: 2px solid transparent;
   }
@@ -377,14 +367,14 @@ main {
     cursor: pointer;
   }
 
-  .ctn-speakers-div{
+  .ctn-speakers-div {
     display: grid;
     grid-template-columns: 50% 50%;
     row-gap: 50px;
   }
 
   .ctn-spk-info > h5,
-  .ctn-spk-info > p{
+  .ctn-spk-info > p {
     font-size: 0.7rem;
   }
 }

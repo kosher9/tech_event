@@ -4,7 +4,6 @@
   --base-color: #272a31;
   --second-color: #ec5242;
   --third-color: #d3d3d3;
-
   --font: "Poppins", sans-serif;
 }
 
@@ -18,7 +17,7 @@ body {
   font-size: 100%;
   font-family: var(--font);
   font-weight: normal;
-  margin: 0px;
+  margin: 0;
 }
 
 .logo {
@@ -28,7 +27,6 @@ body {
   align-self: center;
   text-decoration: none;
 }
-
 
 .line {
   width: 49px;
@@ -41,12 +39,16 @@ body {
   display: none;
 }
 
-.container{
+.container {
   background-color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
 }
 
 .hero {
-  padding: 0 10px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .campagn {
@@ -55,6 +57,12 @@ body {
 
 .navbar {
   padding: 0 10px;
+}
+
+footer > h5 {
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: normal;
 }
 
 .evt-title {
@@ -67,13 +75,13 @@ body {
 }
 
 .evt-title-f {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-size: 1rem;
   font-weight: normal;
 }
 
 .evt-title-s {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .evt-desc {
@@ -86,7 +94,7 @@ body {
 .evt-desc > p {
   text-align: center;
   font-size: 0.8rem;
-  margin: 0px;
+  margin: 0;
   color: #6a6a6a;
 }
 
@@ -94,13 +102,13 @@ body {
   text-align: center;
   font-size: 0.8rem;
   color: #6a6a6a;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-weight: normal;
 }
 
 .evt-d-p > h5 {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 0;
   font-size: 0.6rem;
   font-weight: normal;
 }
@@ -108,12 +116,6 @@ body {
 main {
   background-color: white;
   padding: 20px 10px;
-}
-
-.container {
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
 }
 
 .container > h2 {
@@ -153,7 +155,7 @@ main {
 }
 
 .past-evnt {
-  padding: 0 30px;
+  padding: 0 15%;
   padding-bottom: 20px;
   text-align: center;
   background-color: white;
@@ -193,8 +195,9 @@ main {
 .ctn-partner {
   background-color: var(--base-color);
   position: relative;
-  /* margin-top: 20px; */
   padding-top: 15px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .ctn-partner > h3 {
@@ -203,12 +206,6 @@ main {
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
-}
-
-footer > h5 {
-  text-align: center;
-  font-size: 0.6rem;
-  font-weight: normal;
 }
 
 .partner {
@@ -258,12 +255,19 @@ footer > h5 {
 }
 
 @media screen and (min-width: 720px) {
-
-  .frame-ctn{
+  .frame-ctn {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 25px;
     justify-content: center;
+  }
+
+  .right-ctn > a {
+    align-self: center;
+    text-decoration: none;
+    border: 5px solid var(--second-color);
+    padding: 5px 5px;
+    color: var(--second-color);
   }
 
   .top-header {
@@ -299,19 +303,16 @@ footer > h5 {
   }
 
   .navbar {
-    padding: 0px;
+    padding: 0;
     background-color: white;
-    box-shadow: 0px 0px 8px rgb(0 0 0 / 60%);
-  }
-
-  .nav-container {
-    padding-left: 15%;
-    padding-right: 15%;
+    box-shadow: 0 0 8px rgb(0 0 0 / 60%);
   }
 
   .nav-container {
     display: flex;
     place-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .campagn {
@@ -331,14 +332,6 @@ footer > h5 {
   .right-ctn ul > li > a {
     text-decoration: none;
     color: var(--base-color);
-  }
-
-  .right-ctn > a {
-    align-self: center;
-    text-decoration: none;
-    border: 5px solid var(--second-color);
-    padding: 5px 5px;
-    color: var(--second-color);
   }
 
   .nav-menu {
