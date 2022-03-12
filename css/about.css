@@ -254,7 +254,7 @@ main {
   line-height: 44px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .frame-ctn {
     display: grid;
     grid-template-columns: 50% 50%;
