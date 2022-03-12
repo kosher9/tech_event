@@ -260,7 +260,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .top-header > ul > li > a > img{
+  .top-header > ul > li > a > img {
     width: 15px;
     height: 15px;
   }
@@ -286,7 +286,7 @@ main {
     list-style: none;
     padding-left: 15%;
     padding-right: 15%;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .top-header > ul > li > a {

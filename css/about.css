@@ -255,8 +255,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-
-  .top-header > ul > li > a > img{
+  .top-header > ul > li > a > img {
     width: 15px;
     height: 15px;
   }
@@ -287,7 +286,7 @@ main {
     justify-content: flex-end;
     gap: 15px;
     list-style: none;
-    margin-top: 0px;
+    margin-top: 0;
     padding-left: 15%;
     padding-right: 15%;
   }
