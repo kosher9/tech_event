@@ -8,6 +8,11 @@
   --font: "Poppins", sans-serif;
 }
 
+span {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
 body {
   background-color: rgba(243, 243, 243, 0.575);
   font-size: 100%;
@@ -16,12 +21,39 @@ body {
   margin: 0px;
 }
 
+.logo {
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-self: center;
+  text-decoration: none;
+}
+
+
+.line {
+  width: 49px;
+  height: 2px;
+  border-bottom: 1px solid var(--second-color);
+  margin: auto;
+}
+
+.top-header {
+  display: none;
+}
+
+.container{
+  background-color: white;
+}
+
 .hero {
   padding: 0 10px;
 }
 
+.campagn {
+  display: none;
+}
+
 .navbar {
-  display: flex;
   padding: 0 10px;
 }
 
@@ -79,8 +111,8 @@ main {
 }
 
 .container {
-  margin-left: 30px;
-  margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
 }
 
@@ -94,6 +126,7 @@ main {
   font-weight: normal;
   font-size: 0.7rem;
   color: #6a6a6a;
+  margin-bottom: 0;
 }
 
 .main-title-container {
@@ -120,8 +153,10 @@ main {
 }
 
 .past-evnt {
-  margin: 0 30px;
+  padding: 0 30px;
+  padding-bottom: 20px;
   text-align: center;
+  background-color: white;
 }
 
 .frame {
@@ -155,11 +190,164 @@ main {
   margin-top: 50px;
 }
 
-.ctn-partner{
+.ctn-partner {
   background-color: var(--base-color);
+  position: relative;
+  /* margin-top: 20px; */
+  padding-top: 15px;
 }
 
-.ctn-partner > h3{
+.ctn-partner > h3 {
   text-align: center;
   color: white;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+footer > h5 {
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+
+.partner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.partner > img {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.mobile-menu-container {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--second-color);
+  width: 100%;
+  height: 100vh;
+}
+
+.mobile-menu-close-btn {
+  padding: 1rem;
+}
+
+.mobile-menu-container > ul > li {
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.mobile-menu-container > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+@media screen and (min-width: 720px) {
+
+  .frame-ctn{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .top-header {
+    display: block;
+  }
+
+  .top-header > ul {
+    display: flex;
+    color: white;
+    background-color: var(--base-color);
+    justify-content: flex-end;
+    gap: 15px;
+    list-style: none;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .top-header > ul > li > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .mobile-menu-container {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 60%);
+  }
+
+  .nav-container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .nav-container {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .campagn {
+    display: block;
+  }
+
+  .right-ctn {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .right-ctn > ul {
+    list-style: none;
+  }
+
+  .right-ctn ul > li > a {
+    text-decoration: none;
+    color: var(--base-color);
+  }
+
+  .right-ctn > a {
+    align-self: center;
+    text-decoration: none;
+    border: 5px solid var(--second-color);
+    padding: 5px 5px;
+    color: var(--second-color);
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 32px;
+  }
+
+  .right-ctn > ul > li > .about {
+    font-weight: 700;
+    color: var(--second-color);
+  }
 }

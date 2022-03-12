@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,9 +10,36 @@
 </head>
 
 <body>
+
+    <div id="menu-list" class="mobile-menu-container">
+        <div id="menu-close" class="mobile-menu-close-btn"><a>&#x2715;</a></div>
+        <ul>
+            <li><a id="item-portfolio" href="#portfolio">Portfolio</a></li>
+            <li><a id="item-about" href="#about">About</a></li>
+            <li><a id="item-contact" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
     <header class="navbar">
+        <div class="top-header">
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">My Page</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
         <nav class="nav-container">
-            <img src="../images/menu.svg" alt="hamburger menu">
+            <a class="logo" href="../index.html">Tech<span>Meet</span></a>
+            <img id="menu-button" class="menu-button" src="../images/menu.svg" alt="hamburger menu">
+            <div class="right-ctn">
+                <ul class="nav-menu">
+                    <li><a class="about" href="#">About</a> </li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#join">Join</a></li>
+                    <li><a href="#news">News</a></li>
+                </ul>
+                <a class="campagn" href="#contact">CC Campagn</a>
+            </div>
         </nav>
     </header>
 
@@ -33,52 +61,61 @@
         </div>
     </section>
 
-    <main>
+    <section class="past-evnt">
         <div class="container">
 
             <h2>Creative Commons Global Summit 2015 Logo</h2>
+            <div class="line"></div>
             <span></span>
             <p>The logo of CC Global Summit 2015 was decided through the logo competition from 8. June to 7. July.</p>
 
         </div>
-    </main>
-
-    <section class="past-evnt">
         <div class="ctn-past-evnt">
             <h3>See the past CC Global Summits</h3>
             <span></span>
             <p>Take a look at the last two CC Global Summits who took place in Buenos Aires and in Warsaw</p>
 
-            <div class="frame">
-                <div class="ctn-frame">
-                    <img src="../images/cc_1.jpg" alt="event image">
+            <div class="frame-ctn">
+                <div class="frame">
+                    <div class="ctn-frame">
+                        <img src="../images/cc_1.jpg" alt="event image">
+                    </div>
+                    <div class="img-overlay">
+                        <h3>2013</h3>
+                        <p>CC Global Summit 2013 Buenos Aires</p>
+                    </div>
                 </div>
-                <div class="img-overlay">
-                    <h3>2013</h3>
-                    <p>CC Global Summit 2013 Buenos Aires</p>
+                <div class="frame">
+                    <div class="ctn-frame">
+                        <img src="../images/cc_2.jpg" alt="event image">
+                    </div>
+                    <div class="img-overlay">
+                        <h3>2013</h3>
+                        <p>CC Global Summit 2013 Buenos Aires</p>
+                    </div>
                 </div>
             </div>
-            <div class="frame">
-                <div class="ctn-frame">
-                    <img src="../images/cc_2.jpg" alt="event image">
-                </div>
-                <div class="img-overlay">
-                    <h3>2013</h3>
-                    <p>CC Global Summit 2013 Buenos Aires</p>
-                </div>
-            </div>
+            
         </div>
     </section>
 
     <section class="ctn-partner">
-
         <h3>Partner</h3>
+        <div class="line"></div>
 
         <div class="partner">
-
+            <img class="ptn-img" src="../images/p_1.png" alt="">
+            <img class="ptn-img" src="../images/p_2.png" alt="">
+            <img class="ptn-img" src="../images/p_3.png" alt="">
+            <img class="ptn-img" src="../images/p_4.png" alt="">
+            <img class="ptn-img" src="../images/p_5.png" alt="">
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <h5>Copyright to someone. I love this thing</h5>
+    </footer>
+
+    <script src="../js/humburger-menu.js"></script>
 </body>
 
 </html>

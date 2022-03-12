@@ -11,9 +11,38 @@
 
 <body>
 
+    <div id="menu-list" class="mobile-menu-container">
+        <div id="menu-close" class="mobile-menu-close-btn"><a>&#x2715;</a></div>
+        <ul>
+            <li><a id="item-portfolio" href="html/about.html">About</a></li>
+            <li><a id="item-about" href="#program">Program</a></li>
+            <li><a id="item-contact" href="#join">Join</a></li>
+            <li><a id="item-contact" href="#sponsor">Sponsor</a></li>
+            <li><a id="item-contact" href="#news">News</a></li>
+        </ul>
+    </div>
+
     <header class="navbar">
+        <div class="top-header">
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">My Page</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
         <nav class="nav-container">
-            <img src="images/menu.svg" alt="hamburger menu">
+            <a class="logo" href="#">Tech<span>Meet</span></a>
+            <img id="menu-button" class="menu-button" src="images/menu.svg" alt="hamburger menu">
+            <div class="right-ctn">
+                <ul class="nav-menu">
+                    <li><a href="./html/about.html">About</a> </li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#join">Join</a></li>
+                    <li><a href="#sponsor">Sponsor</a></li>
+                    <li><a href="#news">News</a></li>
+                </ul>
+                <a class="campagn" href="#contact">CC Campagn</a>
+            </div>
         </nav>
     </header>
 
@@ -37,6 +66,7 @@
     <main>
         <div class="main-title-container">
             <h3>Main Program</h3>
+            <div class="line"></div>
         </div>
         <ul class="ctn-program">
             <li class="item-program">
@@ -81,21 +111,31 @@
     </main>
 
     <section class="ctn-speakers">
-        <h3 class="spk-title">Featured speakers</h3>
-        <div class="ctn-spk">
-            <div class="spk-img-ctn">
-                <img src="images/spk_1.jpg" alt="speaker image">
-            </div>
-            <div class="ctn-spk-info">
-                <h5 class="spk-name">Yochai Benkler</h5>
-                <p class="spk-role">Berkman Professor of Entrepreneurial Legal Studies of Havard Law School</p>
-                <span></span>
-                <p class="spk-desc"> Benkler studies commons-based peer production, and pubished his seminal book The Wealth of Networks
-                    in 2006.</p>
-            </div>
+        <div id="spk-title-ctn" class="spk-title-ctn">
+            <h3 class="spk-title">Featured speakers</h3>
+            <div class="line"></div>
         </div>
-    </section>
 
+        <!-- <div id="ctn-speakers-div" class="ctn-speakers-div">
+            <div id="speaker" class="ctn-spk">
+                <div id="spkr-ctn" class="spk-img-ctn">
+                    <img id="spkr-img" class="img-spk" src="images/spk_1.jpg" alt="speaker image">
+                </div>
+                <div class="ctn-spk-info">
+                    <h5 class="spk-name">Yochai Benkler</h5>
+                    <p class="spk-role">Berkman Professor of Entrepreneurial Legal Studies of Havard Law School</p>
+                    <span class="sp"></span>
+                    <p class="spk-desc"> Benkler studies commons-based peer production, and pubished his seminal book
+                        The
+                        Wealth of Networks
+                        in 2006.</p>
+                </div>
+            </div>
+        </div> -->
+
+    </section>
+    <script src="js/humburger-menu.js"></script>
+    <script src="js/speakers.js"></script>
 </body>
 
 </html>

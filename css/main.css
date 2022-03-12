@@ -8,6 +8,25 @@
   --font: "Poppins", sans-serif;
 }
 
+span {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+.line {
+  width: 49px;
+  height: 2px;
+  border-bottom: 1px solid var(--second-color);
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-self: center;
+  text-decoration: none;
+}
+
 body {
   background-color: rgba(243, 243, 243, 0.575);
   font-size: 100%;
@@ -16,16 +35,27 @@ body {
   margin: 0px;
 }
 
-.hero{
+.logo {
+  display: none;
+}
+
+.campagn {
+  display: none;
+}
+
+.hero {
   padding: 0 10px;
+}
+
+.top-header {
+  display: none;
 }
 
 .navbar {
-  display: flex;
   padding: 0 10px;
 }
 
-.evt-title{
+.evt-title {
   color: var(--second-color);
 }
 
@@ -63,7 +93,7 @@ body {
   font-weight: normal;
 }
 
-main{
+main {
   background-color: var(--base-color);
   padding: 20px 10px;
 }
@@ -99,11 +129,11 @@ main{
   padding: 5px;
 }
 
-.program-ctn > p{
+.program-ctn > p {
   color: rgb(228, 228, 228);
 }
 
-.program-ctn > h3{
+.program-ctn > h3 {
   color: var(--second-color);
 }
 
@@ -138,6 +168,7 @@ main{
 
 .ctn-speakers {
   text-align: center;
+  padding: 0 10px;
 }
 
 .spk-title {
@@ -149,11 +180,12 @@ main{
 .ctn-spk {
   display: grid;
   grid-template-columns: 30% 70%;
+  grid-template-rows: 100px;
   column-gap: 5px;
 }
 
 .spk-img-ctn {
-  height: 75%;
+  height: 100%;
   text-align: center;
   align-self: center;
 }
@@ -180,4 +212,179 @@ main{
 
 .spk-name {
   font-weight: bolder;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.mobile-menu-container {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--second-color);
+  width: 100%;
+  height: 100vh;
+}
+
+.mobile-menu-close-btn {
+  padding: 1rem;
+}
+
+.mobile-menu-container > ul > li {
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.mobile-menu-container > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.spk-title-ctn {
+  margin-bottom: 15px;
+}
+
+.ctn-speakers-div{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media screen and (min-width: 720px) {
+  .top-header {
+    display: block;
+  }
+
+  .top-header > ul {
+    display: flex;
+    color: white;
+    background-color: var(--base-color);
+    justify-content: flex-end;
+    gap: 15px;
+    list-style: none;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .top-header > ul > li > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .mobile-menu-container {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 60%);
+  }
+
+  .nav-container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .campagn {
+    display: block;
+  }
+
+  .hero {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .evt-title-s {
+    font-size: 3.5rem;
+  }
+
+  main {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .ctn-program {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .program-ctn {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .ctn-speakers {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 32px;
+  }
+
+  .nav-container {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .right-ctn {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .right-ctn > ul {
+    list-style: none;
+  }
+
+  .right-ctn ul > li > a {
+    text-decoration: none;
+    color: var(--base-color);
+  }
+
+  .right-ctn > a {
+    align-self: center;
+    text-decoration: none;
+    border: 5px solid var(--second-color);
+    padding: 5px 5px;
+    color: var(--second-color);
+  }
+
+  .item-program {
+    border: 2px solid transparent;
+  }
+
+  .item-program:hover {
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+  .ctn-speakers-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 50px;
+  }
+
+  .ctn-spk-info > h5,
+  .ctn-spk-info > p{
+    font-size: 0.7rem;
+  }
 }
