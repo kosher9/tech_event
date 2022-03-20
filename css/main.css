@@ -15,6 +15,10 @@
   --title-font: "Cocogoose", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 span {
   color: var(--second-color);
   text-decoration: none;
@@ -48,7 +52,8 @@ body {
 }
 
 .hero {
-  padding: 0 10px;
+  background-image: url("../images/mobile_intro_bg.png");
+  padding: 16px 10px;
 }
 
 .top-header {
@@ -65,6 +70,8 @@ body {
 
 .evt-title-f {
   margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 150px;
   font-size: 1rem;
   font-weight: normal;
 }
@@ -103,11 +110,13 @@ footer > h5 {
 
 .evt-d-p > h5 {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 0.6rem;
   font-weight: normal;
 }
 
 main {
+  background-image: url("../images/pattern_bg.png");
   background-color: var(--base-color);
   padding: 20px 10px;
 }
@@ -145,6 +154,7 @@ main {
 }
 
 .program-ctn > p {
+  text-align: center;
   color: rgb(228, 228, 228);
 }
 
@@ -178,8 +188,9 @@ main {
 }
 
 .ctn-speakers {
+  padding-bottom: 50px;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 10px 50px 10px;
 }
 
 .spk-title {
@@ -218,6 +229,7 @@ main {
 
 .spk-role {
   color: var(--second-color);
+  font-style: italic;
 }
 
 .spk-name {
@@ -306,6 +318,47 @@ footer {
   font-size: 10px;
   margin-top: 3px;
   color: #a2a2a2;
+}
+
+.ctn-partner {
+  background-color: var(--base-color);
+  position: relative;
+  padding-top: 15px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.ctn-partner > h3 {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.line {
+  width: 49px;
+  height: 2px;
+  border-bottom: 1px solid var(--second-color);
+  margin: auto;
+}
+
+.partner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.partner > img {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+}
+
+.right-ctn > ul > li > :hover {
+  color: var(--second-color);
 }
 
 @media screen and (min-width: 768px) {

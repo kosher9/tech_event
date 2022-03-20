@@ -15,6 +15,10 @@
   --title-font: "Cocogoose", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 span {
   color: var(--second-color);
   text-decoration: none;
@@ -34,13 +38,6 @@ body {
   font-weight: 600;
   align-self: center;
   text-decoration: none;
-}
-
-.line {
-  width: 49px;
-  height: 2px;
-  border-bottom: 1px solid var(--second-color);
-  margin: auto;
 }
 
 .top-header {
@@ -200,36 +197,6 @@ main {
 
 .img-overlay > h3 {
   margin-top: 50px;
-}
-
-.ctn-partner {
-  background-color: var(--base-color);
-  position: relative;
-  padding-top: 15px;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
-.ctn-partner > h3 {
-  text-align: center;
-  color: white;
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 500;
-}
-
-.partner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.partner > img {
-  width: 60px;
-  height: 60px;
-  margin: 20px;
 }
 
 .nav-menu {
@@ -397,8 +364,7 @@ footer {
     gap: 32px;
   }
 
-  .right-ctn > ul > li > .about {
-    font-weight: 700;
+  .right-ctn > ul > li > :hover {
     color: var(--second-color);
   }
 
