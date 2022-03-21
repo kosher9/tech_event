@@ -15,7 +15,7 @@
   --title-font: "Cocogoose", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -188,7 +188,6 @@ main {
 }
 
 .ctn-speakers {
-  padding-bottom: 50px;
   text-align: center;
   padding: 0 10px 50px 10px;
 }
@@ -334,13 +333,6 @@ footer {
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
-}
-
-.line {
-  width: 49px;
-  height: 2px;
-  border-bottom: 1px solid var(--second-color);
-  margin: auto;
 }
 
 .partner {
