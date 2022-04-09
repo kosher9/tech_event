@@ -3,6 +3,7 @@
 # Tech_Event
 
 > A website to see upcomming tech related events
+![](images/preview.png)
 
 ## live demo
 [live demo](https://kosher9.github.io/tech_event/)
