@@ -81,6 +81,15 @@ body {
   font-family: var(--title-font);
 }
 
+.evt-title h1 {
+  background-image: url("../images/font.jpg");
+  color: var(--second-color);
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .evt-desc {
   border: solid white;
   padding: 10px;
