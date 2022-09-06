@@ -2,7 +2,7 @@
 
 # Tech_Event
 
-> A website to see upcomming tech related events
+> A website to see upcoming tech related events
 ![](images/preview.png)
 
 ## live demo
